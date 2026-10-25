@@ -30,4 +30,43 @@
 .bubble-shadow { fill: var(--ink); stroke: var(--ink); stroke-width: 5; stroke-linejoin: round; }
 .bubble-text { font: 700 40px var(--font); fill: var(--ink); }
 
+/* Подарунок легко ширяє, а бант і бірка рухаються окремо */
+.art {
+  transform-origin: 50% 70%;
+  animation: gift-arrive 900ms 180ms cubic-bezier(.2, .75, .25, 1) both,
+             gift-float 4.5s 1.1s ease-in-out infinite;
+}
+
+.art .tag-text {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: tag-wiggle 4s 1.3s ease-in-out infinite;
+}
+
+.art .spark {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.art .spark:nth-of-type(1) { animation: twinkle 2.2s ease-in-out infinite; }
+.art .spark:nth-of-type(2) { animation: twinkle 2.8s .5s ease-in-out infinite; }
+.art .spark:nth-of-type(3) { animation: twinkle 2.4s .9s ease-in-out infinite; }
+.art .spark:nth-of-type(4) { animation: twinkle 3s .2s ease-in-out infinite; }
+
+@keyframes gift-arrive {
+  from { opacity: 0; transform: translateY(28px) scale(.94) rotate(-2deg); }
+  to { opacity: 1; transform: translateY(0) scale(1) rotate(0); }
+}
+
+@keyframes gift-float {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -10px; }
+}
+
+@keyframes tag-wiggle {
+  0%, 100% { rotate: 0deg; }
+  25% { rotate: 2deg; }
+  75% { rotate: -2deg; }
+}
+
 @keyframes twinkle { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }

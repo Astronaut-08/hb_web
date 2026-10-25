@@ -15,3 +15,24 @@
   font-size: calc(35 * var(--u)); font-weight: 700;
 }
 .status svg { width: calc(46 * var(--u)); height: calc(52 * var(--u)); }
+
+.top {
+  animation: slide-down 650ms 100ms cubic-bezier(.2, .75, .25, 1) both;
+}
+
+/* Статусний замочок м'яко підстрибує */
+.status svg {
+  transform-origin: 50% 80%;
+  animation: lock-bounce 3s ease-in-out infinite;
+}
+
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes lock-bounce {
+  0%, 85%, 100% { transform: translateY(0) rotate(0); }
+  90% { transform: translateY(-3px) rotate(-5deg); }
+  95% { transform: translateY(0) rotate(5deg); }
+}

@@ -45,3 +45,13 @@
 
 .label { margin: 0; font-size: calc(24 * var(--u)); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .lead ~ .label { margin-top: calc(29 * var(--u)); }
+
+/* М'яка поява сторінки та основних блоків */
+.page {
+  animation: page-arrive 700ms cubic-bezier(.2, .75, .25, 1) both;
+}
+
+@keyframes page-arrive {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

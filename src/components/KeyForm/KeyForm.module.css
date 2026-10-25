@@ -27,3 +27,27 @@
 .hint { margin: calc(32 * var(--u)) 0 0; font-size: calc(28.6 * var(--u)); font-weight: 500; color: var(--ink-2); }
 
 .label { margin: 0; font-size: calc(24 * var(--u)); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+
+/* Кнопка привертає увагу легким сяйвом при наведенні */
+.unlock button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.unlock button::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -75%;
+  width: 45%;
+  height: 220%;
+  z-index: -1;
+  background: rgba(255, 255, 255, .28);
+  transform: rotate(22deg);
+  transition: left 450ms ease;
+}
+
+.unlock button:hover::after {
+  left: 140%;
+}

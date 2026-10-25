@@ -1,0 +1,219 @@
+.page {
+  position: relative;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  overflow: hidden;
+  padding: 32px 20px;
+  color: #38264b;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 211, 226, 0.75), transparent 24%),
+    radial-gradient(circle at 88% 80%, rgba(255, 226, 166, 0.75), transparent 26%),
+    #fff8f1;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 650px);
+  padding: clamp(28px, 6vw, 58px) clamp(22px, 6vw, 62px) 34px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 24px 80px rgba(93, 54, 88, 0.12);
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+
+.topLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #a15d8d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.sparkle {
+  color: #f3b84b;
+  font-size: 17px;
+}
+
+.illustration {
+  position: relative;
+  display: grid;
+  min-height: 190px;
+  place-items: center;
+  margin: 12px 0 0;
+}
+
+.cake {
+  z-index: 1;
+  display: block;
+  font-size: clamp(92px, 17vw, 130px);
+  line-height: 1.2;
+  filter: drop-shadow(0 12px 10px rgba(153, 84, 105, 0.13));
+  animation: bob 3.2s ease-in-out infinite;
+}
+
+.balloonLeft,
+.balloonRight,
+.partyHat,
+.starOne,
+.starTwo {
+  position: absolute;
+}
+
+.balloonLeft {
+  top: 20px;
+  left: 12%;
+  font-size: 48px;
+  transform: rotate(-13deg);
+}
+
+.balloonRight {
+  top: 8px;
+  right: 12%;
+  font-size: 44px;
+  transform: rotate(13deg);
+}
+
+.partyHat {
+  right: 23%;
+  bottom: 15px;
+  font-size: 38px;
+  transform: rotate(12deg);
+}
+
+.title span {
+  display: block;
+  color: #b36a9c;
+}
+
+.description {
+  max-width: 420px;
+  margin: 0 auto;
+  color: #766a7e;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.homeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  min-height: 54px;
+  margin-top: 28px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  background: linear-gradient(135deg, #d87eaa, #a66bc2);
+  box-shadow: 0 10px 24px rgba(176, 104, 166, 0.3);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.homeButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(176, 104, 166, 0.38);
+}
+
+.homeButton:focus-visible {
+  outline: 3px solid #f3b84b;
+  outline-offset: 4px;
+}
+
+.buttonArrow {
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+.footerNote {
+  margin: 26px 0 0;
+  color: #a59aa9;
+  font-size: 12px;
+}
+
+.footerNote span {
+  color: #e88aae;
+}
+
+.confetti {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.confetti span {
+  position: absolute;
+  top: -24px;
+  width: 9px;
+  height: 15px;
+  border-radius: 3px;
+  opacity: 0.7;
+  animation: fall 9s linear infinite;
+}
+
+.errorCode {
+  margin: 2px 0 0;
+  color: #f08aae;
+  font-size: clamp(64px, 12vw, 92px);
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  line-height: 0.95;
+  text-shadow: 4px 5px 0 #ffe2ec;
+}
+
+.piece1 { left: 7%; background: #f3b84b; animation-delay: -1s; }
+.piece2 { left: 18%; background: #ef8eae; animation-delay: -6s; }
+.piece3 { left: 31%; background: #a66bc2; animation-delay: -3s; }
+.piece4 { left: 67%; background: #7ecfc4; animation-delay: -7s; }
+.piece5 { left: 82%; background: #f3b84b; animation-delay: -4s; }
+.piece6 { left: 94%; background: #ef8eae; animation-delay: -2s; }
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+}
+
+@keyframes fall {
+  0% { transform: translateY(-5vh) rotate(0deg); }
+  100% { transform: translateY(115vh) rotate(560deg); }
+}
+
+@media (max-width: 480px) {
+  .card {
+    border-radius: 24px;
+  }
+
+  .illustration {
+    min-height: 160px;
+  }
+
+  .balloonLeft { left: 3%; font-size: 38px; }
+  .balloonRight { right: 3%; font-size: 36px; }
+  .partyHat { right: 17%; }
+  .starOne { right: 22%; }
+  .starTwo { left: 15%; }
+  .description { font-size: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cake,
+  .confetti span {
+    animation: none;
+  }
+
+  .homeButton {
+    transition: none;
+  }
+}
