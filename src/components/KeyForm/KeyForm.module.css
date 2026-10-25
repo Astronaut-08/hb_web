@@ -1,0 +1,29 @@
+/* Поле ключа */
+.unlock { margin: calc(46 * var(--u)) 0 0; width: calc(850 * var(--u)); }
+.unlock .label { margin: 0; }
+.unlock-row { display: flex; gap: calc(22 * var(--u)); margin-top: calc(8 * var(--u)); }
+.field {
+  flex: none; width: calc(575 * var(--u)); height: calc(106 * var(--u));
+  display: flex; align-items: center; gap: calc(26 * var(--u)); padding: 0 calc(24 * var(--u)) 0 calc(32 * var(--u));
+  background: var(--white); border: var(--bw) solid var(--ink); border-radius: 999px;
+  box-shadow: var(--sh) var(--sh) 0 var(--ink);
+}
+.field:focus-within { outline: 3px solid var(--hot); outline-offset: 3px; }
+.field svg { flex: none; width: calc(78 * var(--u)); height: calc(78 * var(--u)); }
+.field input {
+  flex: 1; min-width: 0; border: 0; outline: 0; background: transparent;
+  font: 800 calc(35 * var(--u)) var(--font); letter-spacing: .15em; text-transform: uppercase; color: var(--ink);
+}
+.field input::placeholder { color: var(--lilac); opacity: 1; }
+.unlock button {
+  flex: none; width: calc(251 * var(--u)); height: calc(106 * var(--u));
+  background: var(--hot); color: var(--white); border: var(--bw) solid var(--ink); border-radius: 999px;
+  box-shadow: var(--sh) var(--sh) 0 var(--ink);
+  font: 800 calc(33 * var(--u)) var(--font); cursor: pointer;
+  transition: translate .12s ease, box-shadow .12s ease;
+}
+.unlock button:hover { translate: -2px -2px; box-shadow: calc(var(--sh) + 2px) calc(var(--sh) + 2px) 0 var(--ink); }
+.unlock button:active { translate: var(--sh) var(--sh); box-shadow: 0 0 0 var(--ink); }
+.hint { margin: calc(32 * var(--u)) 0 0; font-size: calc(28.6 * var(--u)); font-weight: 500; color: var(--ink-2); }
+
+.label { margin: 0; font-size: calc(24 * var(--u)); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }

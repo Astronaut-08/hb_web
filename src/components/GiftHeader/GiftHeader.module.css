@@ -1,0 +1,17 @@
+/* Спільний обрис для малюнків */
+.ink { stroke: var(--ink); stroke-width: 5; stroke-linejoin: round; stroke-linecap: round; }
+
+/* ---------- Шапка ---------- */
+.top { position: relative; display: flex; align-items: center; justify-content: space-between; height: calc(142 * var(--u)); }
+.logo { display: inline-flex; align-items: center; gap: calc(20 * var(--u)); margin-left: calc(-5 * var(--u)); color: var(--ink); text-decoration: none; font-size: calc(51 * var(--u)); font-weight: 800; letter-spacing: -.01em; }
+.logo svg { width: calc(76 * var(--u)); height: calc(68 * var(--u)); }
+
+.status {
+  display: inline-flex; align-items: center; gap: calc(14 * var(--u));
+  height: calc(78 * var(--u)); padding: 0 calc(34 * var(--u)) 0 calc(30 * var(--u));
+  background: var(--white); border: var(--bw) solid var(--ink); border-radius: 999px;
+  box-shadow: var(--sh) var(--sh) 0 var(--ink);
+  font-size: calc(35 * var(--u)); font-weight: 700;
+}
+.status svg { width: calc(46 * var(--u)); height: calc(52 * var(--u)); }
+

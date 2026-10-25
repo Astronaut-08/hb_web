@@ -1,0 +1,31 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: calc(34 * var(--u)) calc(105 * var(--u)) calc(44 * var(--u)) calc(110 * var(--u));
+}
+
+.hero { position: relative; display: grid; grid-template-columns: calc(850 * var(--u)); justify-items: start; }
+
+.badge {
+  margin: calc(31 * var(--u)) 0 0;
+  display: inline-flex; align-items: center;
+  height: calc(71 * var(--u)); padding: 0 calc(38 * var(--u));
+  background: var(--sun-3); border: var(--bw) solid var(--ink); border-radius: 999px;
+  box-shadow: calc(6 * var(--u)) calc(6 * var(--u)) 0 var(--ink);
+  font-size: calc(30.5 * var(--u)); font-weight: 700;
+}
+
+h1 { margin: calc(40 * var(--u)) 0 0; font-size: calc(136 * var(--u)); line-height: .88; font-weight: 800; letter-spacing: -.025em; }
+.wavy { position: relative; display: block; width: fit-content; }
+.wavy::after {
+  content: ''; position: absolute; left: 0; bottom: calc(-52 * var(--u));
+  width: calc(690 * var(--u)); height: calc(34 * var(--u));
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 125 34' preserveAspectRatio='none'%3E%3Cpath d='M0 17Q31.25 -3 62.5 17T125 17' fill='none' stroke='%23FF3F86' stroke-width='9' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x left center / calc(125 * var(--u)) 100%;
+}
+
+.lead { margin: calc(59 * var(--u)) 0 0; max-width: calc(820 * var(--u)); font-size: calc(34 * var(--u)); line-height: 1.4; font-weight: 500; color: var(--ink-2); }
+
+.label { margin: 0; font-size: calc(24 * var(--u)); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.lead ~ .label { margin-top: calc(29 * var(--u)); }
+
