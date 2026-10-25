@@ -2,7 +2,7 @@
 .ink { stroke: var(--ink); stroke-width: 5; stroke-linejoin: round; stroke-linecap: round; }
 
 /* ---------- Ілюстрація ---------- */
-.art { position: absolute; left: calc(890 * var(--u)); top: calc(124 * var(--u)); width: calc(950 * var(--u)); margin: 0; }
+.art { position: static; grid-area: art; align-self: start; justify-self: center; width: calc(950 * var(--u)); max-width: 100%; min-width: 0; margin: calc(110 * var(--u)) 0 0; }
 .art svg { display: block; width: 100%; height: auto; overflow: visible; }
 
 .halo-1 { fill: var(--pink-2); }
@@ -31,4 +31,3 @@
 .bubble-text { font: 700 40px var(--font); fill: var(--ink); }
 
 @keyframes twinkle { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
-

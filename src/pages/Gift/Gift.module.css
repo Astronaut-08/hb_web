@@ -1,13 +1,30 @@
 .page {
   position: relative;
   min-height: 100vh;
-  overflow: hidden;
+  min-height: 100svh;
+  width: 100%;
   padding: calc(34 * var(--u)) calc(105 * var(--u)) calc(44 * var(--u)) calc(110 * var(--u));
 }
 
-.hero { position: relative; display: grid; grid-template-columns: calc(850 * var(--u)); justify-items: start; }
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, calc(850 * var(--u))) minmax(0, calc(980 * var(--u)));
+  grid-template-areas:
+    "badge art"
+    "title art"
+    "lead art"
+    "form art";
+  grid-template-columns: minmax(0, 850fr) minmax(0, 980fr);
+  column-gap: clamp(32px, 3vw, 60px);
+  width: min(100%, 1600px);
+  margin-inline: auto;
+  justify-items: start;
+  min-width: 0;
+}
 
 .badge {
+  grid-area: badge;
   margin: calc(31 * var(--u)) 0 0;
   display: inline-flex; align-items: center;
   height: calc(71 * var(--u)); padding: 0 calc(38 * var(--u));
@@ -16,7 +33,7 @@
   font-size: calc(30.5 * var(--u)); font-weight: 700;
 }
 
-h1 { margin: calc(40 * var(--u)) 0 0; font-size: calc(136 * var(--u)); line-height: .88; font-weight: 800; letter-spacing: -.025em; }
+.hero h1 { grid-area: title; min-width: 0; max-width: 100%; margin: calc(40 * var(--u)) 0 0; font-size: calc(136 * var(--u)); line-height: .88; font-weight: 800; letter-spacing: -.025em; }
 .wavy { position: relative; display: block; width: fit-content; }
 .wavy::after {
   content: ''; position: absolute; left: 0; bottom: calc(-52 * var(--u));
@@ -24,8 +41,7 @@ h1 { margin: calc(40 * var(--u)) 0 0; font-size: calc(136 * var(--u)); line-heig
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 125 34' preserveAspectRatio='none'%3E%3Cpath d='M0 17Q31.25 -3 62.5 17T125 17' fill='none' stroke='%23FF3F86' stroke-width='9' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x left center / calc(125 * var(--u)) 100%;
 }
 
-.lead { margin: calc(59 * var(--u)) 0 0; max-width: calc(820 * var(--u)); font-size: calc(34 * var(--u)); line-height: 1.4; font-weight: 500; color: var(--ink-2); }
+.lead { grid-area: lead; min-width: 0; max-width: 70%; margin: calc(59 * var(--u)) 0 0; font-size: calc(34 * var(--u)); line-height: 1.4; font-weight: 500; color: var(--ink-2); }
 
 .label { margin: 0; font-size: calc(24 * var(--u)); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .lead ~ .label { margin-top: calc(29 * var(--u)); }
-
