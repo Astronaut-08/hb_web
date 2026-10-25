@@ -1,0 +1,14 @@
+/* Серця: положення беруться зі змінних у html */
+.hearts { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.heart {
+  position: absolute;
+  left: var(--x); top: var(--y);
+  width: var(--s); height: calc(var(--s) * .92);
+  color: var(--rose);
+  opacity: var(--o);
+  rotate: var(--r);
+  filter: blur(var(--b));
+  animation: drift 7s ease-in-out infinite;
+  animation-delay: var(--d);
+}
+@keyframes drift { 0%, 100% { translate: 0 0; } 50% { translate: 0 -10px; } }

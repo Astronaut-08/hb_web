@@ -1,0 +1,60 @@
+/* ---------- Текст ---------- */
+.content { 
+    position: relative; 
+    z-index: 2; 
+    display: grid; 
+    justify-items: center; 
+    gap: 22px; 
+    text-align: center; 
+    max-width: 880px;
+    margin: 0 auto;
+    height: 100%;
+    align-content: center;
+}
+.eyebrow { margin: 0; font-size: clamp(.78rem, 1.5vw, 1rem); letter-spacing: .42em; text-transform: uppercase; color: var(--rose); padding-left: .42em; }
+.divider { display: flex; align-items: center; gap: 14px; color: var(--rose); }
+.divider i { display: block; width: clamp(40px, 9vw, 96px); height: 1px; background: linear-gradient(90deg, transparent, var(--rose)); }
+.divider i:last-child { background: linear-gradient(270deg, transparent, var(--rose)); }
+.divider svg { width: 18px; height: 18px; }
+
+h1 { margin: 0; font-weight: 500; font-style: italic; line-height: 1.12; text-wrap: balance; text-shadow: 0 2px 30px #1C091699; }
+.name {
+  display: block;
+  margin-bottom: .12em;
+  font: 400 clamp(3.2rem, 8.4vw, 6.6rem)/1.05 var(--hand);
+  font-style: normal;
+  color: var(--rose);
+  text-shadow: 0 0 28px #F0B9A355, 0 2px 24px #1C0916AA;
+}
+.ask { display: block; font-size: clamp(2rem, 5.2vw, 4.2rem); color: var(--blush); }
+.sub { margin: 0; max-width: 34rem; font-size: clamp(1.05rem, 2vw, 1.35rem); font-style: italic; color: var(--muted); text-wrap: balance; }
+
+/* ---------- Кнопки ---------- */
+.choices { margin-top: 14px; display: flex; align-items: center; justify-content: center; gap: clamp(26px, 5vw, 64px); flex-wrap: wrap; }
+.btn { display: inline-block; font: inherit; line-height: 1; text-decoration: none; cursor: pointer; border-radius: 999px; }
+
+.yes {
+  padding: 20px 64px 21px;
+  font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 600; letter-spacing: .04em;
+  color: var(--wine-1);
+  background: linear-gradient(180deg, #F8D2BE 0%, var(--rose) 45%, var(--rose-deep) 100%);
+  box-shadow: 0 0 0 6px #F0B9A326, 0 0 46px #F0B9A38C, 0 14px 30px -8px #1C0916CC, inset 0 1px 0 #FFFFFF88;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.yes:hover { transform: translateY(-2px); box-shadow: 0 0 0 8px #F0B9A333, 0 0 60px #F0B9A3B3, 0 16px 34px -8px #1C0916CC, inset 0 1px 0 #FFFFFF88; }
+
+/* «Ні»: мала, нахилена, з тінями-копіями. Область навколо неї ширша за саму кнопку (відступи
+   компенсовані мінусовими полями), тому кнопка встигає втекти, коли курсор наближається. */
+.no-wrap { position: relative; display: inline-block; rotate: 5deg; padding: 60px 130px 60px 40px; margin: -60px -130px -60px -40px; }
+.no-wrap > .no:not(.ghost) { position: relative; }
+.no {
+  padding: 11px 30px 12px;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem); font-weight: 500;
+  color: var(--muted); background: transparent; border: 1px solid #E8B4A073;
+  transition: translate 0.25s cubic-bezier(.3, 1.5, .5, 1);
+}
+.ghost { position: absolute; left: 40px; top: 60px; pointer-events: none; }
+.g1 { translate: 34px 14px; opacity: .3; }
+.g2 { translate: 66px 30px; opacity: .15; }
+.g3 { translate: 94px 44px; opacity: .07; }
+.no-wrap:hover > .no:not(.ghost) { translate: 120px -46px; }

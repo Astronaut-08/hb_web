@@ -1,0 +1,8 @@
+/* Вогники */
+.bokeh { position: absolute; border-radius: 50%; pointer-events: none; filter: blur(2px); }
+.b1 { width: 260px; height: 260px; left: 6%;   top: 10%;    background: radial-gradient(circle, #FFC9A455 0%, transparent 68%); }
+.b2 { width: 340px; height: 340px; right: 4%;  top: 4%;     background: radial-gradient(circle, #FFB5A044 0%, transparent 68%); }
+.b3 { width: 200px; height: 200px; left: 14%;  bottom: 8%;  background: radial-gradient(circle, #FFD6B040 0%, transparent 68%); }
+.b4 { width: 300px; height: 300px; right: 10%; bottom: 4%;  background: radial-gradient(circle, #FFC0A04D 0%, transparent 68%); }
+.b5 { width: 90px;  height: 90px;  left: 30%;  top: 6%;     background: radial-gradient(circle, #FFE0C766 0%, transparent 70%); }
+.b6 { width: 70px;  height: 70px;  right: 26%; bottom: 14%; background: radial-gradient(circle, #FFE0C755 0%, transparent 70%); }

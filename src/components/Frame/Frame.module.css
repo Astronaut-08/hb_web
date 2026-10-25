@@ -1,0 +1,8 @@
+/* Рамка і вензелі в кутах */
+.frame { position: absolute; inset: 22px; border: 1px solid var(--line); pointer-events: none; }
+.frame::after { content: ''; position: absolute; inset: 7px; border: 1px solid #E8B4A02B; }
+.corner { position: absolute; width: 64px; height: 64px; color: var(--rose); opacity: .8; pointer-events: none; }
+.corner.tl { left: 14px; top: 14px; }
+.corner.tr { right: 14px; top: 14px; transform: scaleX(-1); }
+.corner.bl { left: 14px; bottom: 14px; transform: scaleY(-1); }
+.corner.br { right: 14px; bottom: 14px; transform: scale(-1, -1); }

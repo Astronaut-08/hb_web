@@ -20,6 +20,17 @@
   --bw: max(2.5px, calc(5 * var(--u))); /* товщина обрису */
   --sh: max(3px, calc(8 * var(--u)));   /* зсув тіні */
   --font: Onest, 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  --wine-0: #1C0916;
+  --wine-1: #3A1228;
+  --wine-2: #6B2342;
+  --blush: #FBEBE0;
+  --rose: #F0B9A3;
+  --rose-deep: #D98B7A;
+  --muted: #D7B3A7;
+  --line: #E8B4A04D;
+  --serif: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+  --hand: 'Marck Script', 'Segoe Script', cursive;
 }
 
 * { box-sizing: border-box; }
@@ -37,7 +48,7 @@ html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   box-sizing: border-box;
 }
 
