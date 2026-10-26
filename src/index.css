@@ -31,6 +31,29 @@
   --line: #E8B4A04D;
   --serif: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
   --hand: 'Marck Script', 'Segoe Script', cursive;
+
+  --birthday-bg: #f6e6e5;
+  --birthday-plate: #fff8ee;
+  --birthday-card: #fffaf4;
+  --birthday-print: #fffdf8;
+  --birthday-hatch: #f4d9d5;
+  --birthday-sea: #d5e5df;
+  --birthday-line-1: #c2d8cf;
+  --birthday-line-2: #d0e1d9;
+  --birthday-line-3: #dfebe5;
+  --birthday-land: #f5e7cd;
+  --birthday-visited: #e9b96f;
+  --birthday-border: #a77c62;
+  --birthday-graticule: #865c5038;
+  --birthday-ink: #492a36;
+  --birthday-muted: #815d69;
+  --birthday-rule: #9a6a63;
+  --birthday-accent: #b53f59;
+  --birthday-accent-soft: #f7d7d9;
+  --birthday-shadow: #6337424d;
+  --birthday-serif-display: 'Old Standard TT', Georgia, 'Times New Roman', serif;
+  --birthday-serif-body: Lora, Georgia, 'Times New Roman', serif;
+  --birthday-hand: 'Marck Script', 'Segoe Script', cursive;
 }
 
 * { box-sizing: border-box; }

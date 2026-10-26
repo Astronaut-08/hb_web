@@ -21,7 +21,7 @@ const ConfirmSecret = () => {
         </div>
         <div className={style["thanks-body"]}>
             <h2>Я так і знав!</h2>
-            <p>Тоді може романтік?</p>
+            <p>Інакше і бути не могло!</p>
             <a className={style.back} href="#">Повернутися</a>
         </div>
         </section>

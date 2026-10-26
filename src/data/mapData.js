@@ -1,0 +1,58 @@
+export const MAP = {
+  width: 1000,
+  height: 673.2,
+  kmPerUnit: 4.547,
+  pins: [
+    { id: 'ams', lat: 52.3676, lon: 4.9041, x: 503.2, y: 120.6 },
+    { id: 'sor', lat: 40.6263, lon: 14.3758, x: 661.3, y: 408.5 },
+    { id: 'par', lat: 48.8566, lon: 2.3522, x: 456.7, y: 203.4 },
+    { id: 'dol', lat: 46.45, lon: 11.85, x: 611, y: 267.8 },
+    { id: 'mad', lat: 40.4168, lon: -3.7038, x: 325, y: 394.1 },
+    { id: 'lan', lat: 29.03, lon: -13.63, x: 62.7, y: 622.9 },
+    { id: 'col', lat: 50.9375, lon: 6.9603, x: 532.8, y: 157.3 },
+    { id: 'kra', lat: 50.0647, lon: 19.945, x: 736.1, y: 170 },
+    { id: 'wro', lat: 51.1079, lon: 17.0385, x: 688.4, y: 149.3 },
+    { id: 'lvi', lat: 49.8397, lon: 24.0297, x: 800.7, y: 165.9 },
+    { id: 'flo', lat: 43.7696, lon: 11.2558, x: 602, y: 333.5 },
+    { id: 'rom', lat: 41.9028, lon: 12.4964, x: 625.4, y: 378.7 },
+    { id: 'bcn', lat: 41.3874, lon: 2.1686, x: 436.1, y: 385.1 },
+  ],
+  labels: [
+    { text: 'АТЛАНТИЧНИЙ ОКЕАН', x: 129, y: 270, size: 15, kind: 'sea', rotation: 18.3 },
+    { text: 'ПІВНІЧНЕ МОРЕ', x: 484.6, y: 36.5, size: 13, kind: 'sea', rotation: 4.3 },
+    { text: 'СЕРЕДЗЕМНЕ МОРЕ', x: 697.2, y: 537.8, size: 15, kind: 'sea', rotation: -4.1 },
+    { text: 'ВЕЛИКОБРИТАНІЯ', x: 398.8, y: 58.6, size: 12, kind: 'land', rotation: 7.2 },
+    { text: 'ФРАНЦІЯ', x: 452.1, y: 260.9, size: 14, kind: 'land', rotation: 3.8 },
+    { text: 'ІСПАНІЯ', x: 293.5, y: 441.4, size: 14, kind: 'land', rotation: 7.4 },
+    { text: 'НІМЕЧЧИНА', x: 592.4, y: 173.8, size: 13, kind: 'land', rotation: -0.4 },
+    { text: 'ПОЛЬЩА', x: 714.4, y: 109.7, size: 13, kind: 'land', rotation: -4.5 },
+    { text: 'УКРАЇНА', x: 928.7, y: 168.1, size: 14, kind: 'land', rotation: -10.8 },
+    { text: 'МАРОККО', x: 227.2, y: 598, size: 12, kind: 'land', rotation: 9.4 },
+    { text: 'АЛЖИР', x: 429.8, y: 632.9, size: 13, kind: 'land', rotation: 4 },
+    { text: 'РУМУНІЯ', x: 833.7, y: 257.9, size: 12, kind: 'land', rotation: -7.5 },
+    { text: 'БІЛОРУСЬ', x: 844.7, y: 62.5, size: 12, kind: 'land', rotation: -9.1 },
+  ],
+};
+
+export const PLACES = [
+  { id: 'ams', name: 'Амстердам', country: 'Нідерланди', region: 'Північна Голландія', label: 't' },
+  { id: 'sor', name: 'Соренто', country: 'Італія', region: 'Кампанія · Неаполітанська затока', label: 'l' },
+  { id: 'par', name: 'Париж', country: 'Франція', region: 'Іль-де-Франс · столиця Франції', label: 'l' },
+  { id: 'dol', name: 'Доломіти', country: 'Італія', region: 'Східні Альпи', label: 'r', approx: true },
+  { id: 'mad', name: 'Мадрид', country: 'Іспанія', region: 'Столиця Іспанії', label: 'r' },
+  { id: 'lan', name: 'Ланцароте', country: 'Іспанія', region: 'Канарські острови · вулканічний острів', label: 'r', approx: true },
+  { id: 'col', name: 'Кельн', country: 'Німеччина', region: 'Рейн · Північний Рейн-Вестфалія', label: 'l' },
+  { id: 'kra', name: 'Краків', country: 'Польща', region: 'Малопольське воєводство', label: 'b' },
+  { id: 'wro', name: 'Вроцлав', country: 'Польща', region: 'Нижньосілезьке воєводство', label: 'l' },
+  { id: 'lvi', name: 'Львів', country: 'Україна', region: 'Львівська область', label: 'r' },
+  { id: 'flo', name: 'Флоренція', country: 'Італія', region: 'Тоскана', label: 'l' },
+  { id: 'rom', name: 'Рим', country: 'Італія', region: 'Лаціо · столиця Італії', label: 'r' },
+  { id: 'bcn', name: 'Барселона', country: 'Іспанія', region: 'Каталонія', label: 'r' },
+];
+
+export const PLACE_LABELS = {
+  r: [14, 4.5, 'start'],
+  l: [-14, 4.5, 'end'],
+  t: [0, -15, 'middle'],
+  b: [0, 26, 'middle'],
+};

@@ -1,0 +1,13 @@
+.birthday-map-page { 
+    margin: 0 auto; 
+    display: grid; 
+    gap: 26px;
+    background:
+        radial-gradient(ellipse at 9% 4%, #fff3d7 0, transparent 26rem),
+        radial-gradient(ellipse at 92% 24%, #f3d5dc 0, transparent 32rem),
+        var(--birthday-bg);
+    color: var(--birthday-ink);
+}
+
+.atlas-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
+.map-sidebar { display: grid; gap: 22px; min-width: 0; }

@@ -1,7 +1,16 @@
+import { useNavigate } from 'react-router-dom'
 import style from './KeyForm.module.css'
 
 
 const KeyForm = () => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    const isAccess = localStorage.getItem('secretKey')
+    if (isAccess === 'flamingo') {
+      navigate('/gift')
+    }
+  }
+
   return (
   <form className={style.unlock} action="#">
     <label className={style.label} htmlFor="key">Секретний ключ</label>
@@ -17,7 +26,7 @@ const KeyForm = () => {
           }
         }/>
       </div>
-      <button type="submit">Розпакувати</button>
+      <button type="submit" onClick={handleClick}>Розпакувати</button>
     </div>
     <p className={style.hint}>Не можеш здогадатись? Запитай в того, хто надіслав подарунок.</p>
   </form>
