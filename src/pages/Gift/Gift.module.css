@@ -1,10 +1,36 @@
 .page {
+  --pink: #FFC2DB;
+  --pink-2: #FFD2E5;
+  --pink-3: #FFDEEC;
+  --hot: #FF3F86;
+  --hot-2: #FF6AA2;
+  --hot-3: #FF8FB9;
+  --ink: #3A1A48;
+  --ink-2: #6C3F7C;
+  --tile-label: #7B4B8B;
+  --lilac: #B88BC9;
+  --sun: #FFD84E;
+  --sun-2: #FFE98C;
+  --sun-3: #FFE680;
+  --amber: #FFB400;
+  --white: #FFFFFF;
+  --u: min(0.047vw, 0.075svh, 1px);
+  --bw: max(2.5px, calc(5 * var(--u)));
+  --sh: max(3px, calc(8 * var(--u)));
+  --font: Onest, 'Segoe UI', system-ui, -apple-system, sans-serif;
+
   position: relative;
   min-height: 100vh;
   min-height: 100svh;
   width: 100%;
   padding: calc(34 * var(--u)) calc(105 * var(--u)) calc(44 * var(--u)) calc(110 * var(--u));
+  background: var(--pink);
+  color: var(--ink);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
 }
+
+.page :global(:focus-visible) { outline: 3px solid var(--hot); outline-offset: 3px; }
 
 .hero {
   position: relative;

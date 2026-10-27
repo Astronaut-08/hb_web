@@ -1,12 +1,33 @@
 import '../styleForGift/birthday.css'
+import { PLACES } from '../../data/mapData'
 
-export default function BirthdayHeader() {
+export default function BirthdayHeader( { activatedId, onSelect } ) {
   return (
     <header className="birthday-header">
       <div className="birthday-heading">
-        <p className="eyebrow">Атлас · Європа · 13 місць</p>
-        <h1 className='title'>Карта Роксолани</h1>
-        <p className='lede'>Міста й місця, де ти була. Натисни на пін, щоб відкрити кадр.</p>
+        <p className="eyebrow">Атлас · Європа · {PLACES.length} місць</p>
+        <h1 className='title'>Альбом Подорожера</h1>
+        <p className='lede'>
+          Рекомендований марштур:{` `} 
+          <span>
+            {PLACES.map((place, idx) => {
+              const isCurrent = place.id === activatedId
+
+              return (
+                <span key={place.id || idx}>
+                  <span
+                  onClick={() => onSelect && onSelect(place.id)}
+                  className={isCurrent ? "route-node active-node" : "route-node"}
+                  style={{ cursor: onSelect ? 'pointer' : 'default' }}
+                  >
+                    {place.name}
+                  </span>
+                  {idx < PLACES.length - 1 ? ' → ' : '!'}
+                </span>
+              )
+            })}
+          </span>
+        </p>
       </div>
       <svg className="birthday-stamp" viewBox="0 0 120 120" role="img" aria-label="Штемпель: день народження Роксолани, 6 грудня 2026">
         <defs>
@@ -24,7 +45,7 @@ export default function BirthdayHeader() {
             <textPath href="#stamp-top" startOffset="50%" textLength="108" lengthAdjust="spacing">З ДНЕМ НАРОДЖЕННЯ</textPath>
           </text>
           <text textAnchor="middle" letterSpacing="2.4">
-            <textPath href="#stamp-bottom" startOffset="50%">РОКСОЛАНО</textPath>
+            <textPath href="#stamp-bottom" startOffset="50%">КОХАННЯ</textPath>
           </text>
         </g>
         <g fill="currentColor" fontFamily="'Old Standard TT', Georgia, serif" textAnchor="middle">

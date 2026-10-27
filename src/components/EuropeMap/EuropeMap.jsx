@@ -95,7 +95,7 @@ export default function EuropeMap({ activeId, selectionRevision, onSelect }) {
   const selectedPin = pinsById[activeId];
   const isZoomed = view.width < MAP.width - 0.5;
   const pinScale = view.width / pixelWidth;
-  const compact = pixelWidth < LABELS_COMPACT_AT && view.width > MAP.width * 0.7;
+  const compact = PLACES.length > 20 || (pixelWidth < LABELS_COMPACT_AT && view.width > MAP.width * 0.7);
   const kmPerPixel = MAP.kmPerUnit * pinScale;
   const scaleKm = NICE_SCALES.reduce((chosen, value) => (
     value / kmPerPixel <= 130 ? value : chosen
@@ -122,7 +122,7 @@ export default function EuropeMap({ activeId, selectionRevision, onSelect }) {
           className={`map${compact ? ' map-compact' : ''}`}
           viewBox={`${view.x.toFixed(2)} ${view.y.toFixed(2)} ${view.width.toFixed(2)} ${view.height.toFixed(2)}`}
           role="group"
-          aria-label="Карта Європи з тринадцятьма місцями"
+          aria-label={`Карта Європи з ${PLACES.length} місцями`}
         >
           <g className="map-base">
             <defs>
@@ -203,7 +203,7 @@ export default function EuropeMap({ activeId, selectionRevision, onSelect }) {
         </div>
       </div>
       <figcaption className="map-legend">
-        <span className="map-key"><i className="swatch visited" />Країни, де ти була</span>
+        <span className="map-key"><i className="swatch visited" />Відвідані країни</span>
         <span className="map-key"><i className="swatch other" />Решта світу</span>
         <span className="map-credit">Кордони · Natural Earth</span>
       </figcaption>

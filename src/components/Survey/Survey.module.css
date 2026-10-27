@@ -17,7 +17,7 @@
 .divider i:last-child { background: linear-gradient(270deg, transparent, var(--rose)); }
 .divider svg { width: 18px; height: 18px; }
 
-h1 { margin: 0; font-weight: 500; font-style: italic; line-height: 1.12; text-wrap: balance; text-shadow: 0 2px 30px #1C091699; }
+.content h1 { margin: 0; font-weight: 500; font-style: italic; line-height: 1.12; text-wrap: balance; text-shadow: 0 2px 30px #1C091699; }
 .name {
   display: block;
   margin-bottom: .12em;

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import '../../components/styleForGift/birthday.css'
 import { useEffect, useState } from 'react'
-import { PLACES, MAP } from '../../../../src/data/mapData'
+import { PLACES, MAP } from '../../data/mapData'
 import BirthdayHeader from '../../components/BirthdayHeader/BirthdayHeader.jsx'
 import MapPlate from '../../components/MapPlate/MapPlate.jsx'
 import PlaceCard from '../../components/PlaceCard/PlaceCard.jsx'
@@ -30,7 +30,7 @@ const Hello = () => {
 
     return (
         <main className="birthday-map-page">
-            <BirthdayHeader />
+            <BirthdayHeader activatedId={place.id} onSelect={selectPlace} />
             <section className="atlas-layout" aria-label="Мапа подорожей Роксолани">
             <MapPlate activeId={place.id} selectionRevision={selection.revision} onSelect={selectPlace} />
             <aside className="map-sidebar">
