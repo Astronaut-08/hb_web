@@ -181,8 +181,60 @@ button:focus-visible, [tabindex="0"]:focus-visible { outline: 2px solid var(--bi
 }
 
 @media (min-width: 980px) {
-  .atlas-layout { grid-template-columns: minmax(0, 1.75fr) minmax(320px, 1fr); align-items: start; }
-  .map-plate { position: sticky; top: 20px; }
+  :scope {
+    height: 100vh;
+    height: 100dvh;
+    min-height: 0;
+    overflow: hidden;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: clamp(12px, 2.5vh, 26px);
+    padding-block: clamp(14px, 2.5vh, 26px);
+  }
+  .birthday-header {
+    min-width: 0;
+  }
+  .birthday-heading {
+    flex: 1;
+    min-width: 0;
+  }
+  .lede {
+    max-width: none;
+  }
+  .atlas-layout {
+    grid-template-columns: minmax(0, 1.75fr) minmax(min(320px, 32vw), 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    min-height: 0;
+    min-width: 0;
+    align-items: stretch;
+    gap: clamp(14px, 1.8vw, 24px);
+  }
+  .map-sidebar {
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scrollbar-gutter: stable;
+    align-content: start;
+  }
+  .map-plate {
+    position: relative;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .map-frame {
+    display: flex;
+    min-height: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .map {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 @media (max-width: 520px) {
   .birthday-header { gap: 10px; }
