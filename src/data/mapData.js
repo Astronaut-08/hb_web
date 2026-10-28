@@ -52,119 +52,119 @@ export const MAP = {
 };
 
 export const PLACES = [
-  { id: 'bol', name: 'Болехів', country: 'Україна', region: 'Івано-Франківська область', label: 'l', photo: './locations/bolekhiv.jpeg', note: 
+  { id: 'bol', name: 'Болехів', country: 'Україна', region: 'Івано-Франківська область', label: 'l', photo: './locations/bolekhiv.webp', note: 
     `Привіт моє кохання! 
     Це перший слайд мого привітання тебе з Днем Народження! 
     Воно у форматі міст, і тобі має сподобатись!
     І хочу я розпочати з міста Болехів! 
     Тут ми познайомились, тут Луна знайшла свій дім, тут розпочався наш шлях!`
    },
-  { id: 'dln', name: 'Долина', country: 'Україна', region: 'Івано-Франківська область', label: 'r', photo: './locations/dolyna.jpeg', note: 
+  { id: 'dln', name: 'Долина', country: 'Україна', region: 'Івано-Франківська область', label: 'r', photo: './locations/dolyna.webp', note: 
     `Але й Долину оминати не буду, адже найближчі тобі друзі походять звідси, Я і Луна!
     Та й радіо тут, що продукує свіженькі плітки, які ми так полюбляємо.`
    },
-  { id: 'lvi', name: 'Львів', country: 'Україна', region: 'Львівська область', label: 'r', photo: './locations/lviv.jpeg', note: 
+  { id: 'lvi', name: 'Львів', country: 'Україна', region: 'Львівська область', label: 'r', photo: './locations/lviv.webp', note: 
     `Славний Львів, сюди ми поїхали вперше, це місто у нас стоїть за ціль, 
     ми завжди прагнули сюди. І вже ось ось, ми вже майже тут.`
    },
-  { id: 'buk', name: 'Буковель', country: 'Україна', region: 'Івано-Франківська область', label: 'b', approx: true, photo: './locations/bukovel.jpeg', note: 
+  { id: 'buk', name: 'Буковель', country: 'Україна', region: 'Івано-Франківська область', label: 'b', approx: true, photo: './locations/bukovel.webp', note: 
     `А тут ми почали подорожувати, звісно не за кордон. Та для старту теж непогано. 
     Прогулянка з собаками по ліску, чаювання ввечері на альтанці окутані в пледі.`
    },
-  { id: 'ifr', name: 'Івано-Франківськ', country: 'Україна', region: 'Івано-Франківська область', label: 'r', photo: './locations/ivanofrank.jpeg', note: 
+  { id: 'ifr', name: 'Івано-Франківськ', country: 'Україна', region: 'Івано-Франківська область', label: 'r', photo: './locations/ivanofrank.webp', note: 
     `Hard life досвід здається почався звідси. Було тяжко, відчуття було що ми на дні. 
     Роботи не було, крутіння та вертіння туди сюди не дуже давало приросту в грошах. 
     Тут ти тяжко працювала в Камеї, і неодноразово мені допомогла.`
    },
-  { id: 'ter', name: 'Тернопіль', country: 'Україна', region: 'Тернопільська область', label: 'l', photo: './locations/ternopil.jpeg', note: 
+  { id: 'ter', name: 'Тернопіль', country: 'Україна', region: 'Тернопільська область', label: 'l', photo: './locations/ternopil.webp', note: 
     `Спільного фото я звідси не знайшов, тому тут просто прикольне наше фото з відпустки. 
    Тернопіль зустрів нас під час війни. Звідси я вирушив на фронт. 
     Тут ми вперше побачились з тобою після того як я поїхав з Долини. 
     Була невизначеність, і я думав що стосункам кінець, але ні. 
     Ти показала мені що життєві складнощі не привід здаватись.`
    },
-  { id: 'kry', name: 'Кривий Ріг', country: 'Україна', region: 'Дніпропетровська область', label: 'l', photo: './locations/kryvyirih.jpeg', note: 
+  { id: 'kry', name: 'Кривий Ріг', country: 'Україна', region: 'Дніпропетровська область', label: 'l', photo: './locations/kryvyirih.webp', note: 
     `Саме тут, на думку моїх батьків, ми почали "шикувати". 
     Але не будемо про них. Це місто пов'язало нас назавжди, тут ти сказала мені так, 
     тут ми бачились найчастіше. Лозунг Кривого Рогу - це місто довжиною в життя. Досить символічно, чи не так?`
    },
-  { id: 'kram', name: 'Краматорськ', country: 'Україна', region: 'Донецька область', label: 'r', photo: './locations/kramatorsk.jpeg', note: 
+  { id: 'kram', name: 'Краматорськ', country: 'Україна', region: 'Донецька область', label: 'r', photo: './locations/kramatorsk.webp', note: 
     `Донецький останній рубіж, не дивлячись на небезпеку і близькість до фронту ти 
     неодноразово приїжджала сюди, просто щоб побачитись зі мною. Це великий прояв любові, я тобі дуже вдячний за це.`
    },
-  { id: 'sed', name: 'Седнів', country: 'Україна', region: 'Чернігівська область', label: 't', approx: true, photo: './locations/sedniv.jpeg', note: 
+  { id: 'sed', name: 'Седнів', country: 'Україна', region: 'Чернігівська область', label: 't', approx: true, photo: './locations/sedniv.webp', note: 
     `Одне з місць де ти здобула новий досвід, покаталась на коні, і все ж. основна причина чому ти приїздила сюди, це щоб знову ми побачились.`
    },
-  { id: 'che', name: 'Чернігів', country: 'Україна', region: 'Чернігівська область', label: 'l', photo: './locations/chernihiv.jpeg', note: 
+  { id: 'che', name: 'Чернігів', country: 'Україна', region: 'Чернігівська область', label: 'l', photo: './locations/chernihiv.webp', note: 
     `Гарний і цікавий час був, чесно кажучи не знаю чи ми б колись поїхали сюди якби не моя служба, проте маємо чекпоінт.`
    },
-  { id: 'kyi', name: 'Київ', country: 'Україна', region: 'Столиця України', label: 'r', photo: './locations/kyiv.jpeg', note: 
+  { id: 'kyi', name: 'Київ', country: 'Україна', region: 'Столиця України', label: 'r', photo: './locations/kyiv.webp', note: 
     `Пам'ятаєш як тут ми не потрапили в інстаграмний ресторан бо я був по формі? 
     Фактично це місто через яке лежали майже всі наші шляхи через Україну.`
    },
-  { id: 'kra', name: 'Краків', country: 'Польща', region: 'Малопольське воєводство', label: 'b', photo: './locations/krakow.jpeg', note: 
+  { id: 'kra', name: 'Краків', country: 'Польща', region: 'Малопольське воєводство', label: 'b', photo: './locations/krakow.webp', note: 
     `Зустріч з Павлом, ми зупинились тут тільки по цій причині, але відкрили для себе непогане місто, 
     досить гарне і організоване. Чи тут ми прийняли рішення про спонтанні зупинки?`
    },
-  { id: 'wro', name: 'Вроцлав', country: 'Польща', region: 'Нижньосілезьке воєводство', label: 'l', photo: './locations/wroclav.jpeg', note: 
+  { id: 'wro', name: 'Вроцлав', country: 'Польща', region: 'Нижньосілезьке воєводство', label: 'l', photo: './locations/wroclav.webp', note: 
     `Ох, нам просто не вистачало сил, і ми переночували і поснідали тут, проте це чудовий чекпоінт щоб не згадати його.`
    },
-  { id: 'col', name: 'Кельн', country: 'Німеччина', region: 'Рейн · Північний Рейн-Вестфалія', label: 'l', photo: './locations/keln.jpeg', note: 
+  { id: 'col', name: 'Кельн', country: 'Німеччина', region: 'Рейн · Північний Рейн-Вестфалія', label: 'l', photo: './locations/keln.webp', note: 
     `Наступна планова зупинка. Дуже чисте і охайне місто, шкода в собор не потрапили, зате поселення було прикольне. 
     Пам'ятаєш? Ми нікого не зустріли, ключ був в скринці.`
    },
-  { id: 'ams', name: 'Амстердам', country: 'Нідерланди', region: 'Північна Голландія', label: 't', photo: './locations/amsterdam.jpeg', note: 
+  { id: 'ams', name: 'Амстердам', country: 'Нідерланди', region: 'Північна Голландія', label: 't', photo: './locations/amsterdam.webp', note: 
     `Гарно тут було, обов\'язково повернемось. Ти на парковці біля відділку який був навпроти нашого мотелю, розкурювала той легкий косяк, 
     який виніс мене за три тяги. Тебе теж тоді взяло!` },
-  { id: 'par', name: 'Париж', country: 'Франція', region: 'Іль-де-Франс · столиця Франції', label: 'l', photo: './locations/paris.jpeg', note: 
+  { id: 'par', name: 'Париж', country: 'Франція', region: 'Іль-де-Франс · столиця Франції', label: 'l', photo: './locations/paris.webp', note: 
     `Пам'ятаю того безхатька який казав тобі "Bonjur", а також як ми поламались тут! Це було якраз в 
     день коли ми планово мали відвідувати діснейленд, то була субота. Пам'ятаю подзвонив батькам, 
     вони тоді переконували що ми до понеділка не зможемо по-ремонтуватись. 
     Але ми знайшли деталь в неділю, більш того, якби батьки не допомогли з тим хто міг би по-ремонтувати авто, 
     я думаю ми однаково знайшли б вихід.`
    },
-  { id: 'nur', name: 'Нюрнберг', country: 'Німеччина', region: 'Баварія', label: 'l', photo: './locations/nurnberg.jpg', note: 
+  { id: 'nur', name: 'Нюрнберг', country: 'Німеччина', region: 'Баварія', label: 'l', photo: './locations/nurnberg.webp', note: 
     `Тут ми придбали тобі адвент календар від рітуалс, а ще поліція пробачила нам що ми припаркувались на платному місці і не заплатили.`
    },
-  { id: 'ven', name: 'Венеція', country: 'Італія', region: 'Венето', label: 'r', photo: './locations/venecia.jpeg', note: 
+  { id: 'ven', name: 'Венеція', country: 'Італія', region: 'Венето', label: 'r', photo: './locations/venecia.webp', note: 
     `Наша перша зупинка в Італії, по суті саме звідси ми почали вивчати Італію. Було гарно, я проспорив 100 євро.`
    },
-  { id: 'trn', name: 'Терні', country: 'Італія', region: 'Умбрія', label: 'l', photo: './locations/terni.jpeg', note: 
+  { id: 'trn', name: 'Терні', country: 'Італія', region: 'Умбрія', label: 'l', photo: './locations/terni.webp', note: 
     `Пам'ятаєш як нас тут надурили з житлом? Це чудові відчуття коли ти так спонтанно зупиняєшся по дорозі, 
     особливо коли тебе намахують з житлом. Фото нема, тому просто фото з дороги.`
    },
-  { id: 'sor', name: 'Соренто', country: 'Італія', region: 'Кампанія · Неаполітанська затока', label: 'l', photo: './locations/sorento.jpg', note: 
+  { id: 'sor', name: 'Соренто', country: 'Італія', region: 'Кампанія · Неаполітанська затока', label: 'l', photo: './locations/sorento.webp', note: 
     `Наша основна ціль поїздки, і це було справжнє кіно! Завданням тут було не тільки пляж знайти, а й вільне місце! Бо пляжів то й майже не було, одні скали.
     Але це найгарніші скали які я коли небудь бачив.`
    },
-  { id: 'ama', name: 'Амалфі', country: 'Італія', region: 'Кампанія · Амальфітанське узбережжя', label: 'l', photo: './locations/amalfi.jpg', note: 
+  { id: 'ama', name: 'Амалфі', country: 'Італія', region: 'Кампанія · Амальфітанське узбережжя', label: 'l', photo: './locations/amalfi.webp', note: 
     `А про це узбережжя ми здається дізнались коли вже поруч біля нього були. Саме ти й підказала про нього, це була неймовірна краса.`
    },
   // { id: 'pom', name: 'Помпеї', country: 'Італія', region: 'Кампанія · поблизу Неаполя', label: 'r', photo: '', note: 
   //   `Тут у нас був перекус у макдональці, по дорозі до Риму!`
   //  },
-  { id: 'rom', name: 'Рим', country: 'Італія', region: 'Лаціо · столиця Італії', label: 'r', photo: './locations/rome.jpg', note: 
+  { id: 'rom', name: 'Рим', country: 'Італія', region: 'Лаціо · столиця Італії', label: 'r', photo: './locations/rome.webp', note: 
     `Одне з тих місць куди ми маємо обов'язково повернутись, на це місто ми витратили день, а треба було цілих три, мінімум.`
    },
-  { id: 'flo', name: 'Флоренція', country: 'Італія', region: 'Тоскана', label: 'l', photo: './locations/florence.jpg', note: 
+  { id: 'flo', name: 'Флоренція', country: 'Італія', region: 'Тоскана', label: 'l', photo: './locations/florence.webp', note: 
     `Пам'ятаєш ту чудову кіношну віллу по дорозі до статуї Давида? Я казав тобі що ми колись купимо її, досі маю це на меті.`
    },
-  { id: 'mad', name: 'Мадрид', country: 'Іспанія', region: 'Столиця Іспанії', label: 'r', photo: './locations/madrid.jpeg', note: 
+  { id: 'mad', name: 'Мадрид', country: 'Іспанія', region: 'Столиця Іспанії', label: 'r', photo: './locations/madrid.webp', note: 
     `Цієї подорожі по суті розпочалось те без чого ця карта і не могла б існувати, а саме фотоапарат!`
    },
-  { id: 'lan', name: 'Ланцароте', country: 'Іспанія', region: 'Канарські острови · вулканічний острів', label: 'r', approx: true, photo: './locations/lanzarote.jpeg', note: 
+  { id: 'lan', name: 'Ланцароте', country: 'Іспанія', region: 'Канарські острови · вулканічний острів', label: 'r', approx: true, photo: './locations/lanzarote.webp', note: 
     `А цієї подорожі у нас змінились погляди на подорожі, тепер вони більш колоритніші і більш фіксовані ніж раніше!`
    },
-  { id: 'bcn', name: 'Барселона', country: 'Іспанія', region: 'Каталонія', label: 'r', photo: './locations/barcelona.jpeg', note: 
+  { id: 'bcn', name: 'Барселона', country: 'Іспанія', region: 'Каталонія', label: 'r', photo: './locations/barcelona.webp', note: 
     `Головна пам'ятка цього міста зустріла нас рясною зливою, але тут в макдональці ми знайшли бутилочку іншого кольору!`
    },
-  { id: 'mil', name: 'Мілан', country: 'Італія', region: 'Ломбардія', label: 'l', photo: './locations/milan.jpeg', note: 
+  { id: 'mil', name: 'Мілан', country: 'Італія', region: 'Ломбардія', label: 'l', photo: './locations/milan.webp', note: 
     `Чесно кажучи, не встигли вивчити і насолодитись, може ще якось повернемось? `
    },
-  { id: 'com', name: 'Озеро Комо', country: 'Італія', region: 'Ломбардія · передгір’я Альп', label: 't', approx: true, photo: './locations/komo.jpeg', note: 
+  { id: 'com', name: 'Озеро Комо', country: 'Італія', region: 'Ломбардія · передгір’я Альп', label: 't', approx: true, photo: './locations/komo.webp', note: 
     `Звідси розпочинається мрія про човник і дім на озері Комо. Сподіваюсь це у нас спільне.`
    },
-  { id: 'dol', name: 'Доломіти', country: 'Італія', region: 'Східні Альпи', label: 'r', approx: true, photo: './locations/dolomity.jpeg', note: 
+  { id: 'dol', name: 'Доломіти', country: 'Італія', region: 'Східні Альпи', label: 'r', approx: true, photo: './locations/dolomity.webp', note: 
     `Дуже величні гори, хоч і фотки вийшли розмиті, але я б навіть знаючи це, все одно поїхав б сюди. 
     До чого ж були ці всі згадки? І в радості і в горі, ми з тобою багато чого пройшли, 
     наш шлях вже дуже немаленький, і за шість років ми багато встигли! Але маємо встигнути ще набагато більше, е-геж? 
