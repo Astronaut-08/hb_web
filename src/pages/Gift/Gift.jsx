@@ -11,9 +11,9 @@ const Gift = () => {
             <GiftHeader />
 
             <main className={style.hero}>
-                <p className={style.badge}>З днем народження!</p>
-                <h1>Для тебе є <span className={style.wavy}>подарунок!</span></h1>
-                <p className={style.lead}>Він запакований і зачинений. Введи секретний ключ, і коробка відкриється.</p>
+                <p className={style.badge} data-nosnippet>З днем народження!</p>
+                <h1 data-nosnippet>Для тебе є <span className={style.wavy}>подарунок!</span></h1>
+                <p className={style.lead} data-nosnippet>Він запакований і зачинений. Введи секретний ключ, і коробка відкриється.</p>
 
                 <GiftArt />
                 <KeyForm />

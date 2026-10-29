@@ -23,9 +23,9 @@ const Survey = () => {
             <div className={style.divider} aria-hidden="true"><i></i><svg><use href="#h"/></svg><i></i></div>
             <h1>
             <span className={style.name}>Кохання,</span>
-            <span className={style.ask}>Чи содобалось тобі привітання?</span>
+            <span className={style.ask}>Ти пробачиш мені всі борги?</span>
             </h1>
-            <p className={style.sub}>Я сподіваюсь, що так. Як то кажуть Happy Wife Happy Life.</p>
+            <p className={style.sub}>Сподіваюсь, що так. Я дуже старався!</p>
 
             {/* <!-- Обидві кнопки ведуть на екран «Ура» (#tak). «Ні» тікає від курсора, а якщо її все ж натиснути, відповідь теж «так». --> */}
             <div className={style.choices}>

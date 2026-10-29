@@ -44,7 +44,7 @@ const GiftArt = () => {
                 <g transform="translate(596 470) rotate(18)">
                 <path className={`${style.ink} ${style.tag}`} d="M-82 -26 Q-82 -34 -74 -34 L54 -34 L90 0 L54 34 L-74 34 Q-82 34 -82 26 Z"/>
                 <circle className={style.hole} cx="-62" cy="-14" r="7"/>
-                <text className={style["tag-text"]} x="10" y="9" textAnchor="middle">ДЛЯ ЛЯНИ</text>
+                <text className={style["tag-text"]} x="10" y="9" textAnchor="middle" data-nosnippet>ДЛЯ ЛЯНИ</text>
                 </g>
 
                 {/* <!-- Замок --> */}
@@ -63,7 +63,7 @@ const GiftArt = () => {
                 {/* <!-- Хмаринка з підказкою --> */}
                 <rect className={style["bubble-shadow"]} x="510" y="33" width="458" height="112" rx="56"/>
                 <use className={`${style.ink} ${style.bubble}`} href="#bubble-shape" />
-                <text className={style["bubble-text"]} x="731" y="97" textAnchor="middle">Ключ - це стоп-слово!</text>
+                <text className={style["bubble-text"]} x="731" y="97" textAnchor="middle" data-nosnippet>Ключ - це стоп-слово!</text>
             </svg>
             </figure>
     )

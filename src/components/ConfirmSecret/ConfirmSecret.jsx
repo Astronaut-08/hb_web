@@ -20,8 +20,8 @@ const ConfirmSecret = () => {
             <svg style={{'--x':'86%','--s':'18px','--t':'9.5s','--d':'-6s'}}><use href="#h"/></svg>
         </div>
         <div className={style["thanks-body"]}>
-            <h2>Я так і знав!</h2>
-            <p>Інакше і бути не могло!</p>
+            <h2>Дякую!</h2>
+            <p>Кохаю неймовірно! Ти найкраща людина яку я зустрічав у своємо житті!</p>
             <a className={style.back} href="#">Повернутися</a>
         </div>
         </section>
